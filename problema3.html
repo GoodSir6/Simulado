@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<script>
+    //Pergunte ao usuário o preço da garrafa de refrigerante. Considere que o mercado está fazendo uma campanha e, ao comprar duas garrafas, serão dados 10% de desconto em cada garrafa. Ao comprar 3 garrafas, serão dados 15% de desconto em cada garrafa.
+    //Calcule e apresente, ao final do programa:
+
+    //Preço para compra de uma garrafa
+    //Preço para compra de duas garrafas
+    //Preço para compra de três garrafas
+
+    //ENTRADA
+    const precoRefri = Number(prompt("Insira o valor da garrafa de refrigerante"));
+
+    //PROCESSAMENTO
+    const desconto1 = precoRefri * 2 * 0.1;
+    const preco2Refri = precoRefri * 2 - desconto1;
+    const desconto2 = precoRefri * 3 * 0.15;
+    const preco3Refri = precoRefri * 3 - desconto2;
+    const resultado1 = precoRefri.toFixed(2).replace(".",",");
+    const resultado2 = preco2Refri.toFixed(2).replace(".",",");
+    const resultado3 = preco3Refri.toFixed(2).replace(".",",");
+    //SAÍDA
+    document.write(`Se você comprar uma garrafa, vai lhe custar R$${resultado1}, se você comprar duas vai custar R$${resultado2} e se você comprar três, vai lhe custar R$${resultado3}`);
+</script>

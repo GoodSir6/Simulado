@@ -1,0 +1,16 @@
+<meta charset="UTF-8">
+<script>
+    //Faça um programa que pergunte o preço do litro da bebida. Também pergunte ao usuário qual foi a quantidade de bebida consumida.
+    //Apresente, ao final do programa, qual é o custo total da bebida consumida.
+
+    //ENTRADA
+    const litroBebida = Number(prompt("Qual o valor do litro da bebida?"));
+    const bebidaConsumida = Number(prompt("Quantos litros de bebida foram consumidos?"));
+
+    //PROCESSAMENTO
+    const valor = litroBebida * bebidaConsumida;
+    const resultado = valor.toFixed(2).replace(".",",");
+
+    //SAÍDA
+    document.write(`O valor total a ser pago é de R$${resultado}`);
+</script>
